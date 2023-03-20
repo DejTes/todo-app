@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <ul>
+            
+            <% for (let i = 0; i < todo.length; i++) { %> 
+                <div class="items">
+                <li>
+                    <%= todo[i].list %>
+                    
+                   
+                    <form action="/todo/<%= todo[i]._id%>?_method=DELETE" method='POST'>
+                        <input class = "button" type="submit" name="_method" value="DELETE">
+                        <!-- <button>Delete</button> -->
+                    </form>
+                    <a href="/todo/<%= todo[i]._id %>/edit">Edit</a>
+                   
+                </li>
+            </div>
+
+               
+
+            <%} %>
+        </ul>
+        <Nav>
+            <a href="/todoapp/new"> Add new To Do List</a>
+        </Nav>
+    </div>
+ 
+     
+</body>
+</html>

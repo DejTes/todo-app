@@ -1,0 +1,67 @@
+html {
+  background-color: #e9ecf7;
+  background-image: -webkit-linear-gradient(180deg, #f2bb9c 50%, #e5e8f5 50%);
+  min-height: 1000px;
+  font-family: "helvetica neue";
+}
+.items {
+  background-color: antiquewhite;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+/* delete button */
+.items form {
+  float: right;
+
+  justify-content: space-between;
+}
+
+/* edit button */
+.items a {
+  float: right;
+  justify-content: space-between;
+}
+
+a {
+  margin-right: 15px;
+  justify-content: space-between;
+}
+.container a {
+  align-items: center;
+}
+h1 {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  height: 900px;
+  background: #e9df15bc;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+form {
+  text-align: center;
+
+  /* padding: 20px; */
+}
+.todo-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* padding: 10px; */
+  margin: 10px;
+  color: #a683e3;
+  border-radius: 10px;
+}
+
+.todo-container .todo-delete {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.container nav a {
+  color: #6c2ee7;
+}
